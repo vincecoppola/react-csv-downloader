@@ -1,6 +1,6 @@
 {
   "name": "react-csv-downloader",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "React csv downloader",
   "main": "dist/index.js",
   "scripts": {
@@ -21,7 +21,7 @@
     "Download"
   ],
   "author": "Castellant Guillaume <gcastellant@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Terminux/react-csv-downloader/issues"
   },
