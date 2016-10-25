@@ -42,7 +42,10 @@ export default function csv(columns, datas, separator = ',', noHeader = false) {
       }
       return columnOrder.map(k => {
         if (typeof v[k] !== 'undefined') {
-          return v[k];
+          const val = typeof v[k] === 'object'
+            ? JSON.stringify(v[k])
+            : String(v[k]);
+          return `"${val.replace(/"/g, '""')}"`;
         }
         return '';
       });
