@@ -29,7 +29,8 @@ export default class CsvDownload extends Component {
     prefix: PrefixSuffixType,
     separator: PropTypes.string,
     text: PropTypes.string,
-    suffix: PrefixSuffixType
+    suffix: PrefixSuffixType,
+    className: PropTypes.string,
   };
 
   static defaultProps = {
@@ -110,7 +111,7 @@ export default class CsvDownload extends Component {
     }
 
     return (
-      <div onClick={this.handleClick}>
+      <div onClick={this.handleClick} className={this.props.className}>
         {children}
       </div>
     );
